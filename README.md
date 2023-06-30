@@ -1,0 +1,1 @@
+# draft_smart_cashier
