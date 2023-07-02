@@ -1,0 +1,47 @@
+require: rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 3.0.3
+  Exclude:
+    - 'spec/**/**'
+Documentation:
+  Enabled: false
+
+
+AllCops:
+  NewCops: enable
+  Exclude:
+    - "Gemfile"
+    - "spec/**/**"
+  TargetRubyVersion: 3.0.3
+
+Style/Documentation:
+  Enabled: false
+
+Style/NestedParenthesizedCalls:
+  Exclude:
+    - "spec/**/*"
+
+Layout/DotPosition:
+  EnforcedStyle: trailing
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: variable
+
+Layout/HashAlignment:
+  EnforcedHashRocketStyle: table
+
+Layout/LineLength:
+  Max: 120
+
+Metrics/AbcSize:
+  Max: 30
+
+Metrics/MethodLength:
+  Max: 25
+
+Metrics/BlockLength:
+  IgnoredMethods: ["describe", "context"]
